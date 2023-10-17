@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ section }) => {
   return (
-    <section className="mt-32">
+    <section ref={section} className="mt-32">
       <h1 className="text-center text-4xl font-outfit font-semibold text-[#64ffDA]">
         skills
       </h1>

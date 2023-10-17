@@ -2,7 +2,7 @@
 import ExperienceCard from "./ExperienceCard";
 import { motion } from "framer-motion";
 
-export default function Experience() {
+export default function Experience({ section }) {
   const experienceData = [
     {
       title: "Full Stack Developer Volunteer",
@@ -54,7 +54,7 @@ export default function Experience() {
     },
   ];
   return (
-    <section className="min-h-screen pt-14 mt-32">
+    <section ref={section} className="min-h-screen pt-14 mt-32">
       <motion.h1
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
-export default function Hero() {
+export default function Hero({ refs }) {
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="min-h-screen flex flex-col justify-around">
       <section className="flex justify-center lg:justify-between items-center w-full">
@@ -27,13 +34,13 @@ export default function Hero() {
                 bottom: 50,
               }}
               initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ ease: "easeOut", duration: 2 }}
               className="text-xl md:text-2xl lg:text-8xl text-center lg:text-left"
             >
               <b>Web Alchemist</b>:
               <br />
-              Crafting Digital Experiences with Code and Creativity 
+              Crafting Digital Experiences with Code and Creativity
               <span className="hidden text-lg xl:block">(drag me)</span>
             </motion.p>
           </div>
@@ -41,21 +48,35 @@ export default function Hero() {
       </section>
       <section className="lg:hidden flex flex-col justify-center items-center">
         <Link href="/">
-          <h1 className=" text-3xl cursor-pointer">
+          <h1 className="text-xl md:text-3xl cursor-pointer">
             <span className="text-main font-extrabold">alex</span>ander timotius
             crespo sitompul
           </h1>
         </Link>
-        <div className="flex gap-5 text-xl">
-          <h1 className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300">
+        <div className="flex gap-5 text-md md:text-2xl">
+          <h1
+            onClick={() => scrollToSection(refs.aboutRef)}
+            className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300"
+          >
+            about
+          </h1>
+          <h1
+            onClick={() => scrollToSection(refs.experienceRef)}
+            className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300"
+          >
             experience
           </h1>
-          <Link href="/projects">
-            <h1 className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300">
-              see all projects
-            </h1>
-          </Link>
-          <h1 className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300">
+          <h1
+            onClick={() => scrollToSection(refs.projectsRef)}
+            className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300"
+          >
+            projects
+          </h1>
+
+          <h1
+            onClick={() => scrollToSection(refs.skillsRef)}
+            className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300"
+          >
             skills
           </h1>
         </div>

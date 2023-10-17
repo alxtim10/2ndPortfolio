@@ -5,9 +5,9 @@ import React from "react";
 import Contacts from "./Contacts";
 import { motion } from "framer-motion";
 
-export default function AboutMe() {
+export default function AboutMe({ section }) {
   return (
-    <section className="mt-20 lg:mt-28">
+    <section id="first-section" ref={section} className="mt-20 lg:mt-28">
       <motion.h1
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,17 +29,17 @@ export default function AboutMe() {
           }}
           className="flex flex-col justify-between items-center"
         >
-          <p className="w-[30rem] text-xl text-center lg:text-left tracking-wide p-4 lg:p-0">
+          <p className="w-[24rem] text-xl text-center lg:text-left tracking-wide p-4 lg:p-0">
             Computer Science fresh graduate from{" "}
             <span className="text-main text-xl font-bold">
               BINUS University
             </span>{" "}
             with a foundation in software engineering and one year of hands-on
             internship experience.
-            <br />
-            Proficient at collaborating with interdisciplinary teams and
-            demonstrating excellent communication skills. Keen to contribute
-            technical expertise and drive innovation in a professional setting.
+            <br className="hidden md:block" /> Proficient at collaborating with
+            interdisciplinary teams and demonstrating excellent communication
+            skills. Keen to contribute technical expertise and drive innovation
+            in a professional setting.
           </p>
           <Contacts />
         </motion.div>
