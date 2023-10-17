@@ -26,7 +26,7 @@ const ScrollContainer = ({ children }) => {
   }));
 
   const viewportRef = useRef(null);
-  const [currentHeight, setCurrentHeight] = useState(window.innerHeight);
+  const [currentHeight, setCurrentHeight] = useState(global?.window && window.innerHeight);
 
   const getCurrentHeight = useCallback((entries) => {
     for (let entry of entries) {
