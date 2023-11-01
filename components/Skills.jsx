@@ -134,7 +134,18 @@ const Skills = ({ section }) => {
                     />
                   </div>
                 </figure>
-                <figure className="itooltip" title="ExpressJS">
+                <figure className="itooltip" title="Laravel">
+                  <div className="relative w-20 h-20">
+                    <Image
+                      src="/images/stackimg/laravel.png"
+                      alt="laravel"
+                      fill={true}
+                      className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                      priority
+                    />
+                  </div>
+                </figure>
+                <figure className="itooltip" title="Express.js">
                   <div className="relative w-20 h-20">
                     <Image
                       src="/images/stackimg/express.png"
@@ -158,7 +169,17 @@ const Skills = ({ section }) => {
                     />
                   </div>
                 </figure>
-
+                <figure className="itooltip" title="Java Springboot">
+                  <div className="relative w-20 h-20">
+                    <Image
+                      src="/images/stackimg/springboot.png"
+                      alt="springboot"
+                      fill={true}
+                      className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                      priority
+                    />
+                  </div>
+                </figure>
                 <figure className="itooltip" title="NodeJS">
                   <div className="relative w-20 h-20">
                     <Image
@@ -170,11 +191,22 @@ const Skills = ({ section }) => {
                     />
                   </div>
                 </figure>
-                <figure className="itooltip" title="Java Springboot">
+                <figure className="itooltip" title="Java">
                   <div className="relative w-20 h-20">
                     <Image
-                      src="/images/stackimg/springboot.png"
-                      alt="springboot"
+                      src="/images/stackimg/java.png"
+                      alt="java"
+                      fill={true}
+                      className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                      priority
+                    />
+                  </div>
+                </figure>
+                <figure className="itooltip" title="PHP">
+                  <div className="relative w-20 h-20">
+                    <Image
+                      src="/images/stackimg/php.png"
+                      alt="php"
                       fill={true}
                       className="hover:scale-110 transition-all duration-300 cursor-pointer"
                       priority

@@ -13,6 +13,7 @@ const Projects = () => {
   const nikeRef = useRef(null);
   const portfolioRef = useRef(null);
   const breakfastRef = useRef(null);
+  const ascRef = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -25,12 +26,43 @@ const Projects = () => {
     <section>
       <PagesNavbar />
 
+      <div ref={ascRef}>
+        <div className="pl-5 lg:pl-20">
+          <h1 className="border-b border-black text-4xl font-outfit font-bold w-1/2 lg:w-1/4 mb-2">
+            Company Profile Website
+          </h1>
+          <p className="text-lg">Company Profile Website for PT Antika Setia Cemerlang</p>
+          <p className="mb-4">Stack : Next.js</p>
+          <a
+            href="https://www.antikasetiacemerlang.com"
+            className="border border-black py-2 px-3 hover:bg-black hover:text-white transition duration-300"
+          >
+            Visit
+          </a>
+        </div>
+        <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
+          <div className="flex flex-col w-full gap-5">
+            <img
+              src="/images/projects/asc.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+            <img
+              src="/images/projects/asc2.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+          </div>
+          <div className="hidden lg:block w-full"></div>
+        </div>
+      </div>
+
       <div ref={simudaRef}>
         <div className="pl-5 lg:pl-20">
           <h1 className="border-b border-black text-4xl font-outfit font-bold w-1/2 lg:w-1/4 mb-2">
             SIMUDA Guest Book
           </h1>
-          <p className="text-lg">Event Guest Registration Web</p>
+          <p className="text-lg">Event Guest Registration Web for GKI Grand Wisata&apos;s youth community</p>
           <p className="mb-4">Stack : React + Vite, Tailwind, Firebase</p>
           <a
             href="https://simudaguestbook.netlify.app"
@@ -273,6 +305,12 @@ const Projects = () => {
       <div className="hidden lg:block z-10 right-5 xl:right-24 2xl:right-56 fixed top-[30%] h-32">
         <h1 className="ml-[4rem] xl:ml-0 text-2xl xl:text-3xl font-outfit font-bold mb-2">
           projects / personal works
+        </h1>
+        <h1
+          onClick={() => scrollToSection(ascRef)}
+          className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
+        >
+          pt antika setia cemerlang
         </h1>
         <h1
           onClick={() => scrollToSection(simudaRef)}

@@ -17,10 +17,10 @@ const EmblaCarousel = () => {
     useDotButton(emblaApi);
 
   const images = [
-    "/images/projects/3.png",
+    "/images/projects/asc.png",
     "/images/projects/1.png",
     "/images/projects/2.png",
-    "/images/projects/4.png",
+    "/images/projects/3.png",
   ];
 
   const imageByIndex = (index) => images[index % images.length];
