@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 export default function Experience({ section }) {
   const experienceData = [
     {
+      title: "Full Stack Developer",
+      place: "Mandiri Inhealth",
+      description: [
+        {
+          data: "Application development using React (TypeScript) and .NET Framework",
+        },
+      ],
+      date: "Present",
+    },
+    {
       title: "Full Stack Developer Volunteer",
       place: "GKI Grand Wisata",
       description: [
@@ -15,7 +25,7 @@ export default function Experience({ section }) {
           data: "Develop an event registration website",
         },
       ],
-      date: "2023",
+      date: "Present",
     },
     {
       title: "Full Stack Developer Intern",
