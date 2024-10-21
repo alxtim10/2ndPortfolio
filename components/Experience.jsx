@@ -5,14 +5,30 @@ import { motion } from "framer-motion";
 export default function Experience({ section }) {
   const experienceData = [
     {
+      title: "Software Engineer",
+      place: "FitAja - PT FitAja Digital Nusantara",
+      description: [
+        {
+          data: "Full Stack development using Next.js (TypeScript) and .NET Core",
+        },
+      ],
+      date: "Present",
+    },
+    {
       title: "Full Stack Developer",
       place: "Mandiri Inhealth",
       description: [
         {
-          data: "Application development using React (TypeScript) and .NET Framework",
+          data: "Full Stack development using React (TypeScript) and .NET Core",
+        },
+        {
+          data: "Integrated Membership app and other app with Kafka",
+        },
+        {
+          data: "Handling data with SQL",
         },
       ],
-      date: "Present",
+      date: "2023-2024",
     },
     {
       title: "Full Stack Developer Volunteer",

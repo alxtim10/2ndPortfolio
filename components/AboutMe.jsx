@@ -30,12 +30,12 @@ export default function AboutMe({ section }) {
           className="flex flex-col justify-between items-center"
         >
           <p className="w-[24rem] text-xl text-center lg:text-left tracking-wide p-4 lg:p-0">
-            Computer Science fresh graduate from{" "}
+            Computer Science graduate from{" "}
             <span className="text-main text-xl font-bold">
               BINUS University
             </span>{" "}
-            with a foundation in software engineering and one year of hands-on
-            internship experience.
+            with a foundation in software engineering with more than one year of hands-on
+            experience.
             <br className="hidden md:block" /> Proficient at collaborating with
             interdisciplinary teams and demonstrating excellent communication
             skills. Keen to contribute technical expertise and drive innovation

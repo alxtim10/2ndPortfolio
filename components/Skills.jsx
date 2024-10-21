@@ -124,7 +124,7 @@ const Skills = ({ section }) => {
             <div className="flex flex-col items-center">
               <div className="flex flex-wrap items-center gap-5">
                 <figure className="itooltip" title=".NET Framework">
-                  <div className="relative w-28 h-16">
+                  <div className="relative w-16 h-16">
                     <Image
                       src="/images/stackimg/dotnet.png"
                       alt="net"
@@ -158,28 +158,6 @@ const Skills = ({ section }) => {
                 </figure>
               </div>
               <div className="flex flex-wrap items-center gap-5">
-                <figure className="itooltip" title="Go">
-                  <div className="relative w-20 h-20">
-                    <Image
-                      src="/images/stackimg/go.png"
-                      alt="go"
-                      fill={true}
-                      className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                      priority
-                    />
-                  </div>
-                </figure>
-                <figure className="itooltip" title="Java Springboot">
-                  <div className="relative w-20 h-20">
-                    <Image
-                      src="/images/stackimg/springboot.png"
-                      alt="springboot"
-                      fill={true}
-                      className="hover:scale-110 transition-all duration-300 cursor-pointer"
-                      priority
-                    />
-                  </div>
-                </figure>
                 <figure className="itooltip" title="NodeJS">
                   <div className="relative w-20 h-20">
                     <Image
