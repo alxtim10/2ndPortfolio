@@ -5,46 +5,48 @@ import { motion } from "framer-motion";
 export default function Experience({ section }) {
   const experienceData = [
     {
-      title: "Software Engineer",
+      title: "Software Engineer I",
       place: "FitAja - PT FitAja Digital Nusantara",
       description: [
         {
-          data: "Full Stack development using Next.js (TypeScript) and .NET Core",
+          data: "Built a Health Care and Lifestyle Generative AI Agent",
+        },
+        {
+          data: "Built a Health Care and Lifestyle E-Commerce",
+        },
+        {
+          data: "Implementing and setting up Cloud Infrastructure such as GCP and Virtual Machine",
+        },
+        {
+          data: "Tech Stack: Nextjs, Laravel/PHP, PostgreSQL, GCP, Gemini",
         },
       ],
       date: "Present",
     },
     {
-      title: "Full Stack Developer",
+      title: "Software Engineer I - II",
       place: "Mandiri Inhealth",
       description: [
         {
-          data: "Full Stack development using React (TypeScript) and .NET Core",
+          data: "Built a Full Stack Membership App using React and .NET Core",
         },
         {
           data: "Integrated Membership app and other app with Kafka",
         },
         {
-          data: "Handling data with SQL",
+          data: "Collaborating with analyst, QA and stakeholders to deliver the application for better business outcome",
+        },
+        {
+          data: "Lead and mentored junior engineers",
+        },
+        {
+          data: "Tech Stack: React, .NET Core, SQL, Kafka, Docker",
         },
       ],
       date: "2023-2024",
     },
     {
-      title: "Full Stack Developer Volunteer",
-      place: "GKI Grand Wisata",
-      description: [
-        {
-          data: "Maintaining the church's website using Next.js and Php",
-        },
-        {
-          data: "Develop an event registration website",
-        },
-      ],
-      date: "Present",
-    },
-    {
-      title: "Full Stack Developer Intern",
+      title: "Software Engineer Intern",
       place: "ADINS - PT. Adicipta Inovasi Teknologi",
       description: [
         {
@@ -71,12 +73,6 @@ export default function Experience({ section }) {
         },
       ],
       date: "2019-2023",
-    },
-    {
-      title: "SMAK 7 Penabur",
-      place: "High School Degree",
-      description: [],
-      date: "2016 - 2019",
     },
   ];
   return (

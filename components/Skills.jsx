@@ -201,7 +201,7 @@ const Skills = ({ section }) => {
             className="opacity-50  mt-5 hover:opacity-100 h-full xl:h-[22rem] 2xl:h-[21rem] bg-none w-[20rem] lg:w-1/2 border-b-4 grayscale hover:grayscale-0 hover:border-b-[10px] transition-all duration-500 border-white"
           >
             <h1 className="text-white text-center text-xl font-outfit font-bold mb-5">
-              Database
+              Infrastructure
             </h1>
             <div className="flex flex-col items-center">
               <div className="flex flex-wrap justify-end items-center gap-5">

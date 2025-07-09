@@ -38,9 +38,9 @@ export default function Hero({ refs }) {
               transition={{ ease: "easeOut", duration: 2 }}
               className="text-xl md:text-2xl lg:text-8xl text-center lg:text-left"
             >
-              <b>Web Alchemist</b>:
+              <b c>Software Alchemist</b>
               <br />
-              Crafting Digital Experiences with Code and Creativity
+              <span className="lg:text-8xl">Crafting Digital Experiences with Code and Creativity</span>
               <span className="hidden text-lg xl:block">(drag me)</span>
             </motion.p>
           </div>

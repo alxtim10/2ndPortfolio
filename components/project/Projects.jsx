@@ -14,6 +14,7 @@ const Projects = () => {
   const portfolioRef = useRef(null);
   const breakfastRef = useRef(null);
   const ascRef = useRef(null);
+  const bchainRef = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -25,6 +26,31 @@ const Projects = () => {
   return (
     <section>
       <PagesNavbar />
+      <div ref={bchainRef}>
+        <div className="pl-5 lg:pl-20">
+          <h1 className="border-b border-black text-4xl font-outfit font-bold w-1/2 lg:w-1/4 mb-2">
+            bchainAI
+          </h1>
+          <p className="text-lg">Blockchain related Chat Bot AI</p>
+          <p className="mb-4">Stack : Next.js, Gemini</p>
+          <a
+            href="https://bchainai.vercel.app/"
+            className="border border-black py-2 px-3 hover:bg-black hover:text-white transition duration-300"
+          >
+            Visit
+          </a>
+        </div>
+        <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
+          <div className="flex flex-col w-full gap-5">
+            <img
+              src="/images/projects/bchain.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+          </div>
+          <div className="hidden lg:block w-full"></div>
+        </div>
+      </div>
 
       <div ref={ascRef}>
         <div className="pl-5 lg:pl-20">
@@ -307,6 +333,12 @@ const Projects = () => {
           projects / personal works
         </h1>
         <h1
+          onClick={() => scrollToSection(bchainRef)}
+          className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
+        >
+          bchainAI
+        </h1>
+        <h1
           onClick={() => scrollToSection(ascRef)}
           className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
         >
@@ -353,12 +385,6 @@ const Projects = () => {
           className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
         >
           personal portfolio
-        </h1>
-        <h1
-          onClick={() => scrollToSection(nikeRef)}
-          className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
-        >
-          alxnike
         </h1>
       </div>
     </section>

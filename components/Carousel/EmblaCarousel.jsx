@@ -17,6 +17,7 @@ const EmblaCarousel = () => {
     useDotButton(emblaApi);
 
   const images = [
+    "/images/projects/bchain.png",
     "/images/projects/asc.png",
     "/images/projects/1.png",
     "/images/projects/2.png",

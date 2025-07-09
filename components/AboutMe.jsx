@@ -34,12 +34,10 @@ export default function AboutMe({ section }) {
             <span className="text-main text-xl font-bold">
               BINUS University
             </span>{" "}
-            with a foundation in software engineering with more than one year of hands-on
-            experience.
-            <br className="hidden md:block" /> Proficient at collaborating with
-            interdisciplinary teams and demonstrating excellent communication
-            skills. Keen to contribute technical expertise and drive innovation
-            in a professional setting.
+            with 1+ years of experience building high scale applications in the digital market.
+            <br className="hidden md:block" /> Experienced working closely with Software Engineering 
+            especially in the aspects of frontend, backend and software development things. 
+            Infrastructure wise, have an understanding on cloud platform, virtual machine and databases.
           </p>
           <Contacts />
         </motion.div>
